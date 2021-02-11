@@ -1,0 +1,30 @@
+footer
+    background-color: #212121
+    &>.row
+        padding: 100px 10px
+        color: #9b9b9b
+        &>div:not(:last-child)
+            border-right: 1px solid $line
+            a
+                color: #9b9b9b
+            hr
+                background-color: $line
+
+    span
+        color: white
+        font-weight: bold
+    li
+        list-style: none
+        &::before
+            content: '>'
+            margin-right: 20px
+    .copyright
+        text-transform: uppercase
+        background-color: #0a0a0a
+        color: #838383
+#tag
+    .tags
+        border: 1px solid $line
+        font-weight: bold
+        font-size: 90%
+        text-align: center

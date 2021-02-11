@@ -1,0 +1,184 @@
+// Section T-Shirt
+
+#first-Section
+    background-image: url('../img/slider-1.jpg')
+    background-repeat: no-repeat
+    background-position: bottom 30% right 35%
+    background-size: contain
+    background-color: $gris
+    h1
+        font-weight: light
+        color: $red
+        &>p
+            font-size: 5vw
+            font-weight: bold
+    button
+        border-radius: 25px
+        border-color: $red
+        background-color: $red
+        &::after
+            content: ' >'
+            opacity: 0
+            transition: 0.5s
+        &:hover
+            border-color: black
+            background-color: black
+            color: white
+            &::after
+                opacity: 1
+                margin-left: 20px
+
+#service
+    .row
+
+        color: white
+        &>div:first-child
+            background-image: url('../img/services/service-1.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        &>div:nth-child(2)
+            background-image: url('../img/services/service-2.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        &>div:last-child
+            background-image: url('../img/services/slider-3.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        hr
+            background-color: white
+        a
+            text-decoration: none
+            color: white
+            font-weight: bolder
+            font-size: 22px
+
+#recent
+    text-align: center
+
+    p
+        font-size: 17px
+        font-weight: bold
+    span
+        font-weight: bold
+        font-size: 17px
+.image-pro
+    overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 10px
+    .cache
+        position: absolute
+        bottom: 98px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 20px
+            padding-bottom: 0px
+            transition: 1s ease
+        a:first-child
+            background-color: $red
+        a:last-child
+            background-color: black
+
+.barre
+    text-decoration: line-through
+    color: gray
+.prix
+    text-decoration: none
+    color: $red
+.sale
+    background-color: $red
+    color: white
+    text-align: center
+    font-size: 9px
+    border-radius: 50%
+    padding: 15px 3px
+
+#discover
+    display: flex
+    background-image: url('../img/cta-bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    // background-attachment: fixed
+    background-position: center
+    width: 100%
+    height: 700px
+    justify-content: center
+    align-items: center
+    span
+        background-color: $red
+        padding: 15px 20px
+        font-size: 12px
+        border-radius: 25px
+
+.rouge
+    background-color: $red
+    color: white
+    button:hover
+        background-color: white
+.gris
+    background-color: $gris
+.noir
+    background-color: #000000
+    color: white
+
+section
+    button
+        text-transform: uppercase
+
+// Carousel
+#myCarousel
+    overflow-x: hidden
+    margin: 0 auto
+    .image-pro
+        overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 5px
+    .cache
+        position: absolute
+        bottom: 161px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 10px
+            padding-bottom: 0px
+            transition: 1s ease
+
+    #carousel-content
+        transition: 1s
+        position: relative
+        left: 0
+#button-car
+    cursor: pointer
+
+#review
+    .col-lg-3
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center

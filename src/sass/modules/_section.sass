@@ -92,8 +92,13 @@
             transition: 1s ease
         a:first-child
             background-color: $red
+            pointer-events: none
+            
         a:last-child
             background-color: black
+            pointer-events: none
+        &:hover
+            cursor: pointer
 
 .barre
     text-decoration: line-through

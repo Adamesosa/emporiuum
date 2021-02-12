@@ -15887,7 +15887,7 @@ nav a:hover {
 }
 
 .modal-content {
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
@@ -16085,10 +16085,16 @@ footer .copyright {
 
 .image-pro .cache a:first-child {
   background-color: #bd584e;
+  pointer-events: none;
 }
 
 .image-pro .cache a:last-child {
   background-color: black;
+  pointer-events: none;
+}
+
+.image-pro .cache:hover {
+  cursor: pointer;
 }
 
 .barre {

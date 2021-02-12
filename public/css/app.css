@@ -15824,6 +15824,39 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 540px) {
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  #bars {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    float: right;
+  }
+  #bars .bar1, #bars .bar2, #bars .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
 header {
   transition: 0.5s;
   top: -100px;
